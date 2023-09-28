@@ -1,0 +1,52 @@
+:root {
+  --border: 1px solid #a1a1a1;
+}
+
+.App {
+  font-family: sans-serif;
+}
+
+.AddressBook {
+  margin: 10px;
+  border: var(--border);
+}
+
+.Heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e5;
+  height: 50px;
+  border-bottom: var(--border);
+}
+
+.UsersList {
+  padding: 0px 5px;
+}
+
+.UserDetails {
+  display: flex;
+  align-items: center;
+  border-bottom: var(--border);
+}
+
+.UserDetails:last-child {
+  border: none;
+}
+
+.UserPicture {
+  padding: 15px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.UserName {
+  padding: 5px;
+}
+
+.endMessage {
+  margin: 0px 5px;
+  padding: 10px;
+  border-top: var(--border);
+}
