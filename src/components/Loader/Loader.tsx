@@ -1,3 +1,4 @@
+import { CSSProperties } from "react";
 import "../../styles/loader.css";
 
 const getCircleClass = (index: number) => {
@@ -9,7 +10,7 @@ const getCircleClass = (index: number) => {
     backgroundColor: "rgba(231, 245, 224, 1)",
     zIndex: -1,
     animation: `firstPulse 4s ${index + `s`} infinite`
-  };
+  } as CSSProperties;
 };
 
 export default function Loader() {
@@ -17,7 +18,7 @@ export default function Loader() {
     <div className="container">
       <div className="smallDot"></div>
       {[...Array(4)].map((item, index) => {
-        return <div style={getCircleClass(index)}></div>;
+        return <div key={index} style={getCircleClass(index)}></div>;
       })}
     </div>
   );

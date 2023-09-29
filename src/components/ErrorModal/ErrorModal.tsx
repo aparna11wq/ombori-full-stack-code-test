@@ -2,7 +2,11 @@ import { useState } from "react";
 import "../../styles/errorModal.css";
 import { BiError } from "react-icons/bi";
 
-export default function ErrorModal(props) {
+type ErrorModalProps = {
+  isOpen: boolean
+}
+
+export default function ErrorModal(props: ErrorModalProps) {
   const { isOpen } = props;
   const [isModalOpen, setIsModalOpen] = useState(isOpen);
 
